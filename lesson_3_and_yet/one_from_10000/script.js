@@ -1,7 +1,7 @@
 "use strict";
 
 var userNumber = prompt('Введите число от 0 до 10 000');
-userNumber = userNumber.replace(/\s+/g,'');
+// userNumber = userNumber.replace(/\s+/g,'');
 
 if ( userNumber == null ) {
     alert('Отмена ввода');

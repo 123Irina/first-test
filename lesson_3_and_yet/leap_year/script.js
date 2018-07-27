@@ -13,5 +13,8 @@ else if ( isNaN( userNumber ) == true ) {
      else if (userNumber % 4 > 0) {
         alert('Не високосный год');
     }
+    else if ( userNumber % 100 == 0 && userNumber % 400 != 0 ) {
+        alert('Не високосный год');
+    }
     else alert('Год високосный');
 
