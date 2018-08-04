@@ -1,5 +1,6 @@
-'use strict'
+'use strict';
 
+// Checked SPAM
 var str = prompt( 'Write text' );
 str = str.toLowerCase();
 var viagra = 'viagra',
@@ -13,13 +14,13 @@ function checkSpam(str) {
     }
 }
 checkSpam(str);
-//
-// function checkSpam(str) {
-//     var lowerStr = str.toLowerCase();
-//
-//     return !!(~lowerStr.indexOf('viagra') || ~lowerStr.indexOf('xxx'));
-// }
-//
-// alert( checkSpam('buy ViAgRA now') );
-// alert( checkSpam('free xxxxx') );
-// alert( checkSpam("innocent rabbit") );
+
+//Sum of two prompts
+
+var numOne = prompt('Введите первое число');
+var numTwo = prompt('Введите второе число');
+//console.log(numTwo);
+numOne = +numOne;
+numTwo = +numTwo;
+var sum = numOne + numTwo;
+alert (sum);
