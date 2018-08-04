@@ -9,8 +9,9 @@
         var result = [];
         var promptMin= + prompt('Введите минимальное значение (больше 1)');
         var promptMax = prompt('Введите максимальное значение. Больше 1');
-
-        if ( promptMax > promptMin && promptMax > 1 ) {
+        console.log(promptMin);
+        console.log(promptMax);
+        if ( promptMax > promptMin && promptMin >= 1 ) {
 
             primeNumber ( promptMin , promptMax );
             alert(result);
@@ -39,8 +40,7 @@
         //     alert('Необходимо ввести число больше 1!');
         //     var promptMin= + prompt('Введите минимальное значение (больше 1)');
         // }
-        console.log(promptMin);
-        console.log(promptMax);
+
 
     </script>
 </body>
