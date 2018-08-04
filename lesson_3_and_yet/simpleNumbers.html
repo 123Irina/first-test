@@ -7,8 +7,8 @@
 <body>
     <script>
         var result = [];
-        var promptMin= + prompt('Введите минимальное значение (больше 1)');
-        var promptMax = prompt('Введите максимальное значение. Больше 1');
+        var promptMin= + prompt('Введите минимальное значение (не меньше 1)');
+        var promptMax = prompt('Введите максимальное значение. Больше минимального');
         console.log(promptMin);
         console.log(promptMax);
         if ( promptMax > promptMin && promptMin >= 1 ) {
