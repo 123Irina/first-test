@@ -10,15 +10,25 @@
     var arr = [1, 2, 3, 4];
     var length = arr.length;
     var newArr =[];
-    function mapArr () {
+    function mapArr (arr, fun) {
+        fun (arr);
+    }
+    function sqwrArr (arr) {
         for (var i=1; i < length + 1; i++) {
         var a = i*i;
         newArr.push (a);
         }
     }
-    mapArr(arr);
+    function plustArr (arr) {
+        for (var i=1; i < length + 1; i++) {
+            var a = (i+5);
+            newArr.push (a);
+        }
+    }
+    mapArr (arr, plustArr);
     console.log( 'map ' + newArr );
     console.log( 'Arr ' + arr );
+
 </script>
 </body>
 </html>
