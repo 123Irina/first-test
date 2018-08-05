@@ -19,6 +19,16 @@
 
         else
             alert('Введены неверные данные.');
+        function primeNumber ( min , max ) {
+            if (min < 2) { min = 2 }
+            nextNumber: for (var i = min; i <= max; i++) {
+
+                for (var j = 2; j < Math.sqrt(i); j++) {
+                    if (i % j == 0) continue nextNumber;
+                }
+                result.push (i);
+            }
+        }
 
         //     if (promptMax < 1 || promptMin >= promptMax)
         //     {alert('Ошибка! Максимальное число должно быть больше минимального и больше 1');
@@ -26,16 +36,7 @@
         //     else
         //         alert('Неверный ввод чисел');
         //
-        // function primeNumber ( min , max ) {
-        //     if (min < 2) { min = 2 }
-        //     nextNumber: for (var i = min; i <= max; i++) {
-        //
-        //         for (var j = 2; j < Math.sqrt(i); j++) {
-        //             if (i % j == 0) continue nextNumber;
-        //         }
-        //         result.push (i);
-        //     }
-        // }
+
         // if (isNaN( promptMin ) == true || + promptMin < 1) {
         //     alert('Необходимо ввести число больше 1!');
         //     var promptMin= + prompt('Введите минимальное значение (больше 1)');
