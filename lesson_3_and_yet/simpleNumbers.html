@@ -23,7 +23,7 @@
             if (min < 2) { min = 2 }
             nextNumber: for (var i = min; i <= max; i++) {
 
-                for (var j = 2; j < Math.sqrt(i); j++) {
+                for (var j = 2; j <= Math.sqrt(i); j++) {
                     if (i % j == 0) continue nextNumber;
                 }
                 result.push (i);
