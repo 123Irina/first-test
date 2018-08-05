@@ -7,37 +7,57 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/resetCss.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 <div class="forBigContainer">
     <div class="bigContainer">
-        <nav>
-            <div class ="tabs check">
-                <img src="img/tooltip.png" alt = "info"/>
-                <h2>information</h2>
-            </div>
-            <div class ="tabs">
-                <img src="img/card.png" height="23" width="19" alt="card"/>
-                <h2>ratings info</h2>
-            </div>
-            <div class ="tabs">
-                <img src="img/basket.png" alt = "basket"/>
-                <h2>Where to buy</h2>
-            </div>
+        <div class="filters">
+        <nav class="button-group filters-button-group">
+                <button class ="tabs button is-checked" data-filter=".ZeroTab">
+                    <i class="far fa-list-alt"></i>
+                    <h2>information</h2>
+                </button>
+                <button class ="tabs button" data-filter=".OneTab">
+                    <i class="fas fa-arrow-up"></i>
+                    <h2>ratings info</h2>
+                </button>
+                <button class ="tabs button" data-filter=".TwoTab">
+                    <i class="fas fa-weight-hanging"></i>
+                    <h2>Where to buy</h2>
+                </button>
         </nav>
+        </div>
         <div class = "container">
-            <div class = "inContainer Tabs checked">
-                <div class="img">
-                    <img src="img/cover.png" alt = "Big game"/>
-                </div>
-                <div class="item">
-                    <h3>FarCry 4</h3>
-                    <div class = "round">7.8</div>
-                    <h4>First Released Nov 17, 2014</h4>
+            <div class ="grid">
+                <div class="grid-sizer"></div>
+                <div class = "tabsText element-item ZeroTab">
+                    <div class="img">
+                        <img src="img/cover.png" alt = "Big game"/>
+                    </div>
+                    <div class="item">
+                        <h3>FarCry 4</h3>
+                        <div class = "round">7.8</div>
+                        <h4>First Released Nov 17, 2014</h4>
 
-                    <p>In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima
-                        layas struggling under the regime of a despotic self-appointed king.
-                    </p>
+                        <p>In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima
+                            layas struggling under the regime of a despotic self-appointed king.
+                        </p>
+                    </div>
+                </div>
+                <div class = "tabsText element-item OneTab hidden">
+                    <p style="color: red">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class = "tabsText element-item TwoTab hidden">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.</p>
                 </div>
             </div>
             <div>
@@ -59,22 +79,13 @@
                 </ul>
             </div>
         </div>
-        <div class = "inContainer Tabs OneTab">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                anim id est laborum.</p>
-        </div>
-        <div class = "inContainer Tabs TwoTab">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                anim id est laborum.</p>
-        </div>
+
     </div>
 </div>
-<script src="script.js" async></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

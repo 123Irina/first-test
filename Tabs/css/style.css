@@ -17,23 +17,24 @@ nav {
     background-color: #2b2f3f;
     display: flex;
     justify-content: space-between;
+    padding: 30px 60px 0;
+}
+nav button.tabs {
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    border: none;
+    background: none;
     font-size: 16px;
     line-height: 28px;
     color: #8d90a3;
     text-align: center;
-    text-transform: uppercase;
-    padding: 30px 60px 0;
 }
-nav div.tabs {
-    padding-bottom: 30px;
-}
-/*nav img:first-child {*/
-    /*opacity: 0.4;*/
-/*}*/
-nav div.check {
+button.tabs.is-checked {
     color: white;
     border-bottom: 2px solid white;
-    opacity: 1;
+}
+button:active, button:focus {
+    outline: none !important;
 }
 .container {
     background-color: #212434;
@@ -60,40 +61,36 @@ nav div.check {
     width: 70%;
 }
 
-.container .checked {
+.container .tabsText {
     display: flex;
     margin-bottom: 25px;
     min-height: 230px;
 }
-.inContainer .img {
+.tabsText .img {
     display: inline-block;
     margin-right: 6.5%;
 }
-.inContainer .item {
+.tabsText .item {
     max-width: 66.5%;
 }
-.inContainer h4 {
+.tabsText h4 {
     font-size: 14px;
     line-height: 20px;
     color: rgb(253,253,253);
     margin-bottom: 45px;
 }
-.inContainer h3 {
+.tabsText h3 {
     font-size: 32px;
     line-height: 40px;
     color: rgb(255, 255, 255);
 }
-.inContainer p {
+.tabsText p {
     font-size: 14px;
     line-height: 22px;
     color: rgb(183,186,205);
 }
-.Tabs {
+.grid .tabsText.hidden {
     display: none;
-}
-
-.OneTab {
-    color: red;
 }
 ul {
     display: flex;
