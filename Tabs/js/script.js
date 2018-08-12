@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('button').click(function () {
+    $('.button-group button').click(function () {
         $('.hidden').removeClass("hidden");
     });
        //переключение Табов
