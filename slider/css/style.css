@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: url("../img/bg.png");
+    background-size: cover;
+}
+header {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 60px;
+    position: relative;
+}
+h1 {
+    font-size: 18px;
+    letter-spacing: 4px;
+    line-height: 19px;
+    color: rgb(48, 48, 48);
+    font-weight: bold;
+    margin: 0 auto;
+}
+p {
+    font-size: 86px;
+    line-height: 90px;
+    color: rgb(0,0,0);
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.tringle {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-image: url("../img/treug.png");
+    left: 7%;
+    top: 240px;
+}
+.plus {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: url("../img/plust.png") no-repeat center;
+    right: 21%;
+    top: 20px;
+}
+.slick-slider {
+    max-width: 100%;
+    padding-left: 135px;
+
+}
+div.img {
+    display: inline-block;
+    max-width: 445px;
+    height: 400px;
+    overflow: hidden;
+    margin-right: 50px;
+    position: relative;
+}
+div.img:last-child {
+    margin-right: 0;
+}
+.hover {
+    display: none;
+    background-image: url("../img/hover_img.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 50%;
+
+}
+div.img:hover .hover {
+    display: block;
+    max-width: 445px;
+    min-height: 400px;
+    opacity: 0.5;
+
+}
+div.img:hover img {
+    opacity: 0.5;
+}
+
+.prev {
+    position: absolute;
+    bottom: 37.5%;
+    left:30px;
+}
+.next {
+    position: absolute;
+    bottom: 37.5%;
+    right: 30px;
+}
