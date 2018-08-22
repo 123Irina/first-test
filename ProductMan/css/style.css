@@ -1,13 +1,17 @@
 body {
     background-color: #efefef;
-    padding: 3% 10%;
+    padding: 3% 0;
 }
-
+.logo, .slider {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+}
 .logo {
     padding: 0;
-
 }
 ul:after {
+    display: table;
     content: '';
     clear: both;
 }
@@ -26,7 +30,7 @@ h1, ul, li {
 ul.navigator {
     float: right;
     text-align: right;
-    width: 40%;
+    width: 45%;
     font-family: Roboto, sans-serif;
     font-weight: normal;
     font-size: 18px;
@@ -57,14 +61,27 @@ h3 {
     text-transform: uppercase;
     margin: 0;
 }
+@media all and (max-width: 1300px){
+    h3 {
+        font-size: 100px;
+    }
+}
 .slider {
     padding: 3.3% 0;
+    display: flex;
+    justify-content: space-between;
+    min-height: 568px;
+}
+.slider img {
+    display: block;
+    max-width: 50%;
+    vertical-align: top;
 }
 .black {
     display: inline-block;
+    width: 42%;
+    margin-right: 8%;
     text-align: right;
-    width: 50%;
-    margin-right: 100px;
 }
 
 div.black p {
@@ -75,7 +92,6 @@ div.black p {
     font-size: 24px;
     font-weight: 300;
     line-height: 36px;
-    text-align: right;
     margin-bottom: 2%;
     margin-top: 5%;
 }
@@ -83,26 +99,23 @@ div.black p {
     letter-spacing: 1px;
     font-family: Roboto, sans-serif;
     font-weight: bold;
-    margin: 0%;
+    margin: 0;
     color: red;
 }
 .slid span.active {
     background-color: red;
     border: 1px solid red;
 }
-.slider img {
-    display: inline-block;
-    vertical-align: top;
-}
+
 .slid {
     width: 52%;
     text-align: right;
     height: 85px;
     padding-bottom: 100px;
+    margin-top: 65px;
 }
 .slid span {
     display: inline-block;
-    margin-top: 65px;
     border: 1px solid black;
     border-radius: 50%;
     background-color: black;
@@ -117,7 +130,7 @@ section {
     background-color: white;
     padding: 20px 5% 5% 5%;
     text-align: center;
-    max-width: 1200p;
+    max-width: 1200px;
     font-family: Raleway, sans-serif;
 }
 section h2 {
@@ -135,12 +148,14 @@ section p {
     margin: 15px auto;
     margin-bottom: 70px;
 }
+section img {
+    margin: 0 auto;
+}
 .flex {
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
     align-items: start;
-    max-width: ;
 }
 .flex div {
     width: 31%;
@@ -151,15 +166,16 @@ div.big_img {
     width: 65.5%;
 }
 img {
+    display: block;
     max-width: 100%;
-    height: 100%;
 }
 
 .flex div:hover img, div.big_img:hover img {
     opacity: 0;
 }
 .flex div:hover {
-    background: #e10011 url("../img/Rectangle 4.png") no-repeat;
+    background: #e10011 url("../img/Rectangle 4.png") no-repeat left;
+    background-size: contain;
 }
 div.mail {
     text-align: center;
