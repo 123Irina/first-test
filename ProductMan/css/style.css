@@ -5,7 +5,7 @@ body {
 .logo, .slider {
     margin: 0 auto;
     max-width: 1200px;
-    width: 90%;
+    width: 95%;
 }
 .logo {
     padding: 0;
@@ -63,7 +63,7 @@ h3 {
 }
 @media all and (max-width: 1300px){
     h3 {
-        font-size: 100px;
+        font-size: 7em;
     }
 }
 .slider {
@@ -74,12 +74,12 @@ h3 {
 }
 .slider img {
     display: block;
-    max-width: 50%;
+    width: 50%;
     vertical-align: top;
 }
 .black {
     display: inline-block;
-    width: 42%;
+    width: 47%;
     margin-right: 8%;
     text-align: right;
 }
