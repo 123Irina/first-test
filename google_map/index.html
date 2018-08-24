@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Google map</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Google map</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 <body>
-    <h1>My map</h1>
-    <div class="map" id="map">
+        <h1>My map</h1>
+        <h2 id="city"></h2>
+        <div class="maps" id="map"></div>
 
-    </div>
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTI-e1rzg1XJqyNnK_I6ZpBel1lxkh5y4&callback=myMap"></script>
-    <script src="script.js"></script>
+        <script
+               src="https://code.jquery.com/jquery-3.3.1.min.js"
+               integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+               crossorigin="anonymous"></script>
+        <!--<script>-->
+            <!--function initMap() {-->
+                <!--var mapProp= {-->
+                    <!--center:new google.maps.LatLng(47.846460,35.149270),-->
+                    <!--zoom:10,-->
+                <!--};-->
+                <!--var map=new google.maps.Map(document.getElementById("map"),mapProp);-->
+            <!--}-->
+            <!--// var marker = new google.maps.Marker({-->
+            <!--//     position: {lat: 47.846460, lng: 35.149270},-->
+            <!--//     map: map})-->
+        <!--</script>-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBX4dBwpwNvG-qWc2JEll4EZ1Y9H0c5Ssc"></script>
+<script src="script.js"></script>
 </body>
 </html>
